@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>7ark4t</title>
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body onresize="resize()" onload="main()">
+<canvas id="canvas-background"></canvas>
+<script src="sparkle.js"></script>
+<script>
+  function videoPlay() {
+      var video = document.getElementById("video");
+			video.volume = 0.05;
+			video.play();
+  }
+
+	function audioPlay() {
+			var audio = document.getElementById("audio");
+			audio.volume = 0.9;
+			audio.play();
+	}
+</script>
+
+<video loop preload="auto" class="vidoverlay" id="video">
+	<source src="./ship.mp4" type="video/mp4">
+</video>
+
+<audio loop preload="auto" id="audio">
+	<source src="./ .mp3" type="audio/mpeg">
+</audio>
+
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+	<label for="overlay-toggle" onclick="videoPlay(); audioPlay(); ">
+		<span class="overlayno-hover hover" style="font-family: monospace; font-size: 0.6em;">click to enter</span>
+		<span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">click to enter</span>
+	</label>
+</div>
+
+<div id="center" align="center">
+	<span>
+		<p class="hover graffiti" style="font-size: 100px">7ark4t</a>
+		<p class="hover"></p>
+
+		<p class="hover">
+			<a href="https://discord.gg/6dDsYZEdxh" target="_blank" class="hover">discord</a> |
+			<a href="https://www.instagram.com/7ark4t/" target="_blank" class="hover">instagram</a> |
+			<a href="https://www.youtube.com/channel/UCevBy61ZN-JQfw7eA1K_uXQ" target="_blank" class="hover">youtube</a> 
+
+		<p class="hover"></p>
+		</p>
+	</span>
+</div>
+</html>
